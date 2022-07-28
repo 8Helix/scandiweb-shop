@@ -1,0 +1,152 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-img img {
+  width: 61rem;
+  height: 51.1rem;
+  padding: 0.7rem 0 0 0;
+  object-fit: cover;
+}
+
+.image {
+  width: 8rem;
+  height: 8rem;
+}
+
+.image img {
+  width: 8rem;
+  height: 8rem;
+  padding: 0.7rem 0;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.grid-3 {
+  margin: 7.2rem 0 6rem 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 2.5rem;
+  flex: 1;
+}
+
+.stock h4 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  padding-bottom: 1.8rem;
+}
+
+.price h4:nth-child(1) {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  padding-bottom: 1rem;
+}
+
+.price h4:nth-child(2) {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+}
+
+.description {
+  font-family: "Roboto";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.description ul {
+  list-style: none;
+}
+
+.info {
+  padding: 0.7rem 0 0 4rem;
+}
+
+.info h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 2.7rem;
+  padding-bottom: 1.6rem;
+}
+
+.info h3 {
+  font-size: 2.8rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+  padding-bottom: 4.3rem;
+}
+
+.type p {
+  font-family: "Roboto Condensed";
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.text-box {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+  padding-bottom: 2.4rem;
+}
+
+.text {
+  border: 2px solid var(--color-black);
+  width: 6.3rem;
+  height: 4.5rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.selected-text {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.color-box {
+  display: flex;
+  flex-direction: row;
+  gap: 0.8rem;
+  padding-bottom: 3.6rem;
+}
+
+.swatch {
+  width: 3.6rem;
+  height: 3.6rem;
+  padding: 2px;
+}
+
+.swatch div {
+  width: 100%;
+  height: 100%;
+}
+
+.selected-swatch {
+  border: 2px solid var(--color-primary);
+}
+
+.text-hover {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.swatch:hover {
+  border: 2px solid var(--color-primary);
+  cursor: pointer;
+}
+
+.swatch-hover {
+  border: 2px solid var(--color-primary);
+  cursor: pointer;
+}

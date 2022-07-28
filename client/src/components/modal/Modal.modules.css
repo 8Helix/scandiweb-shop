@@ -1,0 +1,191 @@
+.modal-info h2,
+.modal-info h3 {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+}
+
+.modal-container {
+  position: absolute;
+  top: 7.3rem;
+  width: 100%;
+  height: calc(100% - 7.3rem);
+  background-color: rgba(57, 55, 72, 0.22);
+
+  z-index: 6;
+}
+
+.modal-description {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  margin: 3.2rem 1.6rem;
+}
+
+.modal-price h4 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  margin-top: 0.4rem;
+}
+
+.cart-modal {
+  width: 32.5rem;
+  max-height: 47.7rem;
+  float: right;
+  margin-right: 7.2rem;
+  background-color: var(--color-white);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.cart-modal::-webkit-scrollbar {
+  width: 0.4rem;
+  background: var(--color-grey);
+}
+
+.cart-modal::-webkit-scrollbar-thumb {
+  background: rgb(109, 107, 107);
+}
+
+.modal-element {
+  display: flex;
+  justify-content: space-between;
+  margin: 3.2rem 1.6rem 4.2rem 1.6rem;
+}
+
+.modal-swatch {
+  width: 2.4rem;
+  height: 2.4rem;
+  padding: 1px;
+}
+
+.modal-swatch div {
+  width: 100%;
+  height: 100%;
+}
+
+.modal-text {
+  border: 2px solid var(--color-black);
+  min-width: 2.4rem;
+  min-height: 2.4rem;
+  font-family: "Source Sans Pro";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-type p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  margin: 0.8rem 0;
+}
+
+.modal-amount {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+
+.modal-text-box {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+}
+
+.modal-color-box {
+  display: flex;
+  flex-direction: row;
+  gap: 0.8rem;
+}
+
+.modal-amount-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.8rem;
+}
+
+.modal-plus-sign,
+.modal-minus-sign {
+  width: 2.4rem;
+  height: 2.4rem;
+  border: 1px solid var(--color-black);
+  cursor: pointer;
+  position: relative;
+}
+
+.modal-plus-sign::before,
+.modal-minus-sign::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 1px;
+  width: 8px;
+  background-color: var(--color-black);
+}
+
+.modal-plus-sign::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 8px;
+  width: 1px;
+  background-color: var(--color-black);
+}
+
+.modal-image-box {
+  width: 12.1rem;
+  position: relative;
+}
+
+.modal-image-box img {
+  width: 100%;
+}
+
+.buttons {
+  margin: 3.2rem 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.2rem;
+}
+
+.modal-button button {
+  height: 4.3rem;
+  width: 14rem;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Raleway";
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.6rem;
+}
+
+.white-button button {
+  color: var(--color-black);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-black);
+}
+
+.green-button button {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+
+.modal-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem 1.6rem 0 1.6rem;
+  font-family: "Roboto";
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+}

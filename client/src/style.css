@@ -1,0 +1,61 @@
+:root {
+  --color-primary: #5ece7b;
+  --color-white: #fff;
+  --color-whitey: #f9f9f9;
+  --color-black: #1d1f22;
+  --color-grey: #eee;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 1rem = 10px */
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  font-family: "Raleway";
+  background-color: var(--color-whitey);
+  color: var(--color-black);
+}
+
+h1 {
+  font-family: "Raleway";
+  font-size: 4.2rem;
+  font-weight: 400;
+  line-height: 6.72rem;
+  text-transform: capitalize;
+}
+
+.container {
+  padding: 0 10.1rem 1rem 10.1rem;
+}
+
+#root {
+  position: relative;
+  z-index: 0;
+}
+
+.button button {
+  margin: 2rem 0 4rem 0;
+  height: 5rem;
+  width: 29.2rem;
+  background-color: var(--color-primary);
+  cursor: pointer;
+  border: none;
+  color: var(--color-white);
+  text-transform: uppercase;
+}
+
+.price {
+  margin-bottom: 2rem;
+}
+
+.info-box h3 {
+  padding-bottom: 2rem;
+}

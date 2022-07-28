@@ -1,0 +1,144 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 8rem;
+  position: relative;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  height: 8rem;
+}
+
+.nav-list-item {
+  display: flex;
+  align-items: center;
+  padding: 0 1.6rem;
+
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.92rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: var(--color-black);
+}
+
+.active-nav {
+  color: var(--color-primary);
+  font-weight: 600;
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.brand-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.shopping-menu {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.currency {
+  font-size: 18px;
+  border: none;
+}
+
+.cart {
+  position: relative;
+  cursor: pointer;
+}
+
+.cart-number {
+  position: absolute;
+  color: white;
+  background-color: var(--color-black);
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  right: 0;
+  top: 0;
+  transform: translate(40%, -40%);
+}
+
+/*/////////////////////////   dropdown    /////////////////////*/
+.select-box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.88rem;
+  color: var(--color-black);
+  z-index: 7;
+}
+
+.selected {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.selected span {
+  width: 1.5rem;
+  text-align: right;
+}
+
+.currency-container {
+  position: absolute;
+  z-index: 9;
+  top: 3.2rem;
+  left: -1.5rem;
+  width: 11.4rem;
+  max-height: 0;
+  padding-bottom: 1.3rem;
+  opacity: 0;
+  transition: all 0.4s;
+  overflow: hidden;
+  background-color: var(--color-white);
+}
+
+.currency-container.active {
+  max-height: 41.9rem;
+  opacity: 1;
+}
+
+.currency-option {
+  margin-top: 1rem;
+  padding: 0.8rem 2rem 0.8rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.currency-option:hover {
+  background: var(--color-grey);
+}
+
+.drop-down {
+  margin-left: 1rem;
+}
+
+.drop-up {
+  transform: rotateX(180deg);
+}
+
+.select-box label {
+  cursor: pointer;
+}
+
+.radio {
+  display: none;
+}
